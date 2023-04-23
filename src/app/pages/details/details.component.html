@@ -1,0 +1,44 @@
+<section class="col-12 m-auto" style=" background-color: #869da7;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-md-9 col-lg-7 col-xl-5">
+                <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-4">
+                        <div class="d-flex text-black">
+                            <div class="flex-shrink-0">
+                                <img src="https://mdbootstrap.com/img/new/avatars/{{student.id}}.jpg"
+                                    alt="Generic placeholder image" class="img-fluid"
+                                    style="width: 180px; border-radius: 10px;">
+                            </div>
+                            <div class="flex-grow-1 ms-3">
+                                <h5 class="mb-1">{{student.name}}</h5>
+                                <p class="mb-2 pb-1" style="color: #2b2a2a;">{{student.email}}</p>
+                                <div class="d-flex justify-content-start rounded-3 p-2 mb-2"
+                                    style="background-color: #efefef;">
+                                    <div>
+                                        <p class="small text-muted mb-1">Age</p>
+                                        <p class="mb-0">{{student.age}}</p>
+                                    </div>
+                                    <div class="px-3 ">
+                                        <p class="small text-muted mb-1">Group</p>
+                                        <p class="mb-0">{{student.group}}</p>
+                                    </div>
+                                    <div>
+                                        <p class="small text-muted mb-1">Grade</p>
+                                        <p class="mb-0">{{student.grade}}</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex pt-1">
+                                    <button type="button" class="btn btn-outline-primary me-1 flex-grow-1"
+                                        routerLink="../../">Return</button>
+                                    <button type="button" routerLink="../../form/{{student.id}}"
+                                        class="btn btn-primary flex-grow-1">update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

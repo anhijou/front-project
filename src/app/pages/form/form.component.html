@@ -1,0 +1,39 @@
+<div class="container col-md-6 card">
+    <form class="m-6 card-body" action="../.." [formGroup]="studentForm">
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form1Example1">Full Name</label>
+            <input type="text" id="form1Example1" class="form-control" formControlName="name" required>
+
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form1Example2">Email address</label>
+            <input type="email" class="form-control" formControlName="email" />
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-lg-4 ">
+                <input type="number" id="form1Example2" placeholder="your age" class="form-control"
+                    formControlName="age" required>
+            </div>
+            <div class="col-lg-8 ">
+                <select class="form-select" aria-label="Default select example" formControlName="group">
+                    <option selected disabled value="">Choose your group</option>
+                    <option value="A">Group A</option>
+                    <option value="B">Group B</option>
+                    <option value="C">Group C</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="form-outline mb-4">
+            <label class="form-label" for="formGrade">Grade</label>
+            <input type="number" id="formGrade" class="form-control" formControlName="grade" />
+        </div>
+
+        <button type="submit" (click)="onSubmit(studentForm)" class="btn btn-primary btn-block mx-1">Add
+            student</button>
+        <button type="button" routerLink="../.." class="btn btn-primary btn-block mx-1">Return</button>
+    </form>
+</div>
